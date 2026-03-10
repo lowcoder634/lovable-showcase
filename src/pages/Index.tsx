@@ -1,44 +1,58 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Calendar, MessageSquare, Zap, Users, Shield, TrendingUp, ImageIcon } from "lucide-react";
+import { ArrowRight, Calendar, MessageSquare, Stethoscope, FlaskConical, Brain, BookOpen, Users, ImageIcon } from "lucide-react";
 
 const apps = [
   {
-    title: "TaskFlow Pro",
-    subtitle: "Project Management",
-    problem: "Remote teams waste 5+ hours weekly switching between scattered tools — Slack threads, email chains, and spreadsheets — losing context and momentum on every project.",
-    solution: "A unified Kanban workspace with real-time collaboration, automated status updates, and integrated team chat — reducing context-switching by 60%.",
-    tags: ["Productivity", "Collaboration", "Real-time"],
+    title: "Care Navigator",
+    subtitle: "Patient Appointment Prep",
+    problem: "Patients forget symptoms, medications, and questions during doctor visits. With only 15 minutes per appointment, disorganized information leads to missed diagnoses and wasted visits.",
+    solution: "An AI-powered app that collects simple patient notes and generates a structured 'Doctor Visit Brief' — covering symptoms, timeline, medications, and questions — ready to hand to the doctor in under 30 seconds.",
+    tags: ["Healthcare", "AI", "Patient Experience"],
+    icon: <Stethoscope className="w-5 h-5" />,
+    color: "from-[hsl(160,45%,45%)] to-[hsl(180,40%,40%)]",
+    projectUrl: "/projects/45626d46-b3a7-4b68-a119-0c5ca5bdccae",
+  },
+  {
+    title: "Trial Match Pro",
+    subtitle: "Clinical Trial Matching",
+    problem: "Patients must call clinics one-by-one to discover clinical trials. They have no way to know which trials match their condition, treatment history, or eligibility — leaving life-changing opportunities undiscovered.",
+    solution: "A personalized dashboard that analyzes patient behavior and medical history to surface matched clinical trials, alongside curated research news, community updates, and content preferences.",
+    tags: ["Healthtech", "Personalization", "Research"],
+    icon: <FlaskConical className="w-5 h-5" />,
+    color: "from-[hsl(250,55%,55%)] to-[hsl(280,50%,50%)]",
+    projectUrl: "/projects/b2cf96ef-5e59-400a-8431-e7e7ebce13e4",
+  },
+  {
+    title: "Mind Bridge",
+    subtitle: "Neurological Monitoring",
+    problem: "Neurological symptoms are subjective and episodic — clinicians rely on patient recall during brief appointments, missing critical patterns in tremors, speech changes, and medication side effects.",
+    solution: "An AI-powered monitoring app using smartphone sensors, voice analysis, and patient-reported outcomes to provide clinicians with objective, continuous data for treatment optimization.",
+    tags: ["AI", "Neurology", "Sensors"],
+    icon: <Brain className="w-5 h-5" />,
+    color: "from-[hsl(200,60%,50%)] to-[hsl(220,55%,45%)]",
+    projectUrl: "/projects/b0cb3a67-3004-495f-991c-8f6d6815a30b",
+  },
+  {
+    title: "Story Scout",
+    subtitle: "Children's Book Recommendations",
+    problem: "Parents spend hours searching for age-appropriate books their kids will actually enjoy. Generic recommendation lists ignore individual reading history, preferences, and local library availability.",
+    solution: "An AI-powered recommendation engine that analyzes a family's reading history — likes, dislikes, themes, and authors — to suggest personalized children's books available in the local library catalog.",
+    tags: ["EdTech", "AI", "Family"],
+    icon: <BookOpen className="w-5 h-5" />,
+    color: "from-[hsl(35,85%,55%)] to-[hsl(15,75%,50%)]",
+    projectUrl: "/projects/e0275e0c-1b0f-4930-a76c-578b58dde4ed",
+  },
+  {
+    title: "Start Buddy",
+    subtitle: "Accountability Companion",
+    problem: "People with ADHD and executive function challenges struggle to start tasks alone. Existing productivity apps add complexity instead of providing the simple human presence that makes starting easier.",
+    solution: "A body-doubling app with real-time companion messaging — share a link, a buddy joins with zero sign-up, and their encouraging presence helps you start and finish tasks without judgment.",
+    tags: ["Wellness", "Real-time", "Accessibility"],
     icon: <Users className="w-5 h-5" />,
-    color: "from-[hsl(250,65%,55%)] to-[hsl(280,60%,55%)]",
-  },
-  {
-    title: "HealthSync",
-    subtitle: "Patient Portal",
-    problem: "Patients juggle multiple apps for appointments, lab results, and prescriptions — leading to missed medications and fragmented health records.",
-    solution: "A single dashboard connecting patients to their care team with appointment scheduling, real-time lab results, medication reminders, and secure messaging.",
-    tags: ["Healthcare", "HIPAA", "Telehealth"],
-    icon: <Shield className="w-5 h-5" />,
-    color: "from-[hsl(170,60%,45%)] to-[hsl(190,55%,45%)]",
-  },
-  {
-    title: "InvestTracker",
-    subtitle: "Financial Analytics",
-    problem: "Retail investors lack institutional-grade tools to track portfolio performance, analyze risk exposure, and spot market opportunities in real time.",
-    solution: "An analytics dashboard with live market data, custom watchlists, AI-powered risk scoring, and automated portfolio rebalancing alerts.",
-    tags: ["Fintech", "Analytics", "AI"],
-    icon: <TrendingUp className="w-5 h-5" />,
-    color: "from-[hsl(35,90%,55%)] to-[hsl(15,80%,50%)]",
-  },
-  {
-    title: "ShopEase",
-    subtitle: "Mobile Commerce",
-    problem: "Small retailers lose 68% of mobile shoppers to abandoned carts due to clunky checkout flows and poor product discovery on mobile devices.",
-    solution: "A mobile-first storefront with one-tap checkout, AI-curated product recommendations, and streamlined inventory management for store owners.",
-    tags: ["E-commerce", "Mobile", "Payments"],
-    icon: <Zap className="w-5 h-5" />,
-    color: "from-[hsl(300,50%,50%)] to-[hsl(330,60%,50%)]",
+    color: "from-[hsl(140,50%,45%)] to-[hsl(160,45%,40%)]",
+    projectUrl: "/projects/947db697-7ee7-4406-b178-3935f7a6bf0e",
   },
 ];
 
@@ -67,7 +81,7 @@ const Index = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A showcase of full-stack applications I've designed and built with Lovable — 
+            A showcase of full-stack applications designed and built with Lovable — 
             each solving a specific user pain point, from concept to deployment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
