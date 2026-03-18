@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/lovable-showcase/">
         <Layout>
           <Routes>
             <Route path="/" element={<Navigate to="/ai-builds" replace />} />
