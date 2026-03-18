@@ -38,6 +38,8 @@ const VideoPlayer = ({ src, label, aspectClass = "aspect-video" }: { src: string
   );
 };
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Mayo Clinic International Patient Website",
@@ -52,8 +54,8 @@ const projects = [
     tags: ["Information Architecture", "UX", "Accessibility", "Internationalization", "Continuous Discovery", "Stakeholder Management", "Cross-functional Leadership"],
     color: "from-[hsl(200,65%,50%)] to-[hsl(220,60%,45%)]",
     sideBySide: [
-      { label: "Before", video: "/intl-old.mov", aspectClass: "aspect-[3/4]" },
-      { label: "After", video: "/intl-new.mov", aspectClass: "aspect-[3/4]" },
+      { label: "Before", video: `${base}intl-old.mov`, aspectClass: "aspect-[3/4]" },
+      { label: "After", video: `${base}intl-new.mov`, aspectClass: "aspect-[3/4]" },
     ],
     showSideBySideCaptions: true,
   },
@@ -67,7 +69,7 @@ const projects = [
     ],
     tags: ["Acquisition", "UX", "Personalization", "Product Launch"],
     color: "from-[hsl(170,55%,45%)] to-[hsl(190,50%,40%)]",
-    dashboardImage: "/concierge-medicine.png",
+    dashboardImage: `${base}concierge-medicine.png`,
     hidePlaceholders: true,
   },
   {
@@ -84,8 +86,8 @@ const projects = [
     tags: ["A/B Testing", "Acquisition", "UX", "SEO"],
     color: "from-[hsl(160,50%,45%)] to-[hsl(180,45%,40%)]",
     sideBySide: [
-      { label: "Before", image: "/faq-old.png" },
-      { label: "After", image: "/faq-new.png" },
+      { label: "Before", image: `${base}faq-old.png` },
+      { label: "After", image: `${base}faq-new.png` },
     ],
     showSideBySideCaptions: true,
   },
@@ -102,7 +104,7 @@ const projects = [
     ],
     tags: ["Content Strategy", "Regulatory", "UX", "SEO", "Stakeholder Management", "Cross-functional Leadership"],
     color: "from-[hsl(30,80%,50%)] to-[hsl(50,75%,45%)]",
-    dashboardImage: "/PVG+pre+vs.+post+redesign+(1).webp",
+    dashboardImage: `${base}PVG+pre+vs.+post+redesign+(1).webp`,
     hidePlaceholders: true,
   },
   {
@@ -118,8 +120,8 @@ const projects = [
     tags: ["SEO", "Accessibility", "Internationalization", "UX"],
     color: "from-[hsl(280,55%,50%)] to-[hsl(300,50%,45%)]",
     sideBySide: [
-      { label: "Before", image: "/disease-before.png" },
-      { label: "After", image: "/disease-after.png" },
+      { label: "Before", image: `${base}disease-before.png` },
+      { label: "After", image: `${base}disease-after.png` },
     ],
     showSideBySideCaptions: true,
   },
@@ -135,11 +137,11 @@ const projects = [
     ],
     tags: ["Content Strategy", "A/B Testing", "Accessibility", "Cross-functional Leadership", "Change Management"],
     color: "from-[hsl(220,60%,50%)] to-[hsl(240,55%,45%)]",
-    dashboardVideo: "/COVID-Map-Screen Recording 2022-02-22.mov",
+    dashboardVideo: `${base}COVID-Map-Screen Recording 2022-02-22.mov`,
     dashboardVideoCaption: "Screen recording of U.S. COVID-19 transmission map tool over the course of the pandemic",
-    secondaryVideo: "/vaccine-comparison.mov",
+    secondaryVideo: `${base}vaccine-comparison.mov`,
     secondaryVideoCaption: "Vaccine Comparison Chart to maximize informed decision making and accessibility",
-    tertiaryVideo: "/infectious-disease-timeline.mov",
+    tertiaryVideo: `${base}infectious-disease-timeline.mov`,
     tertiaryVideoCaption: "Adapting to User Needs: From Answering Critical Questions to Showcasing the Importance of Vaccines Throughout History",
     hidePlaceholders: true,
   },
@@ -153,7 +155,7 @@ const projects = [
     ],
     tags: ["Clinical Trials", "B2B2C", "SEO", "Digital Publishing"],
     color: "from-[hsl(10,75%,50%)] to-[hsl(30,70%,45%)]",
-    detailImages: ["/jumo-covid1.png", "/jumo-covid2.png", "/jumo-covid3.png"],
+    detailImages: [`${base}jumo-covid1.png`, `${base}jumo-covid2.png`, `${base}jumo-covid3.png`],
     hidePlaceholders: true,
   },
 ];

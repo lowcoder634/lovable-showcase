@@ -45,7 +45,7 @@ const VideoEmbed = () => {
 
 const Headshot = () => (
   <div className="relative w-full rounded-2xl overflow-hidden max-w-sm mx-auto shadow-md">
-    <img src="/headshot.jpeg" alt="Nichole Acosta — Digital Health Product Manager, professional headshot" className="w-full h-auto block" />
+    <img src={`${import.meta.env.BASE_URL}headshot.jpeg`} alt="Nichole Acosta — Digital Health Product Manager, professional headshot" className="w-full h-auto block" />
   </div>
 );
 

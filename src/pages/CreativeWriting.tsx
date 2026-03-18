@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ImageIcon, ArrowRight, Play } from "lucide-react";
 import GetInTouch from "@/components/GetInTouch";
 
+const base = import.meta.env.BASE_URL;
+
 const pieces = [
   {
     title: "Throat on Fire",
@@ -13,7 +15,7 @@ const pieces = [
     problem: "Watch the virtual book launch to hear the poems performed live, learn what inspired the collection, and listen to a conversation about the themes, the writing process, and what it means to lead with empathy on the page and on the stage.",
     tags: ["Poetry", "Spoken Word", "Chapbook"],
     color: "from-[hsl(300,50%,50%)] to-[hsl(320,45%,45%)]",
-    coverImage: "/throat-on-fire-cover.png",
+    coverImage: `${base}throat-on-fire-cover.png`,
     blurb: {
       quote: "I was blessed with the opportunity to know Nichole as a quiet child prodigy in love with language, and now you, dear readers, can see her wield it with urgency, precision, and grace in Throat on Fire. These examinations of how far we've come and how far we've yet to go with regard to our perceptions on sexuality, race, and gender are evidence of a new force in spoken word — for the stage and the page — and one who leads with the bravest of hearts.",
       attribution: "— Alan Semerdjian, Author of In the Architecture of Bone and The Serpent and The Crane",
@@ -33,7 +35,7 @@ const pieces = [
       { youtubeId: "xUUEzazCtqE", caption: "NY Historical Society — Poetic Justice Series" },
       { youtubeId: "gubys5N_uLY", caption: "Sisters — Video Poem" },
       { youtubeId: "bQE6YVC5ncg", caption: "Shot Heard Round The World (Cultation)" },
-      { youtubeId: "tQ59qxshNxE", caption: "Trash — with Xavier Simmons", customThumbnail: "/trash-video-poem.png" },
+      { youtubeId: "tQ59qxshNxE", caption: "Trash — with Xavier Simmons", customThumbnail: `${base}trash-video-poem.png` },
     ],
   },
 ];
