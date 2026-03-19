@@ -85,7 +85,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <footer className="py-8 border-t border-border text-center text-sm text-muted-foreground">
         <div className="container">
-          Nichole Acosta · {new Date().getFullYear()}
+          Copyright 2026 Nichole Acosta | Built with Claude Code
         </div>
       </footer>
     </div>
