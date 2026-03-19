@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Stethoscope, FlaskConical, BookOpen, Users, ImageIcon, Bell, AlertTriangle } from "lucide-react";
+import { ArrowRight, Stethoscope, FlaskConical, BookOpen, Users, ImageIcon, Bell, AlertTriangle, Calendar } from "lucide-react";
 import GetInTouch from "@/components/GetInTouch";
 
 const base = import.meta.env.BASE_URL;
@@ -52,11 +52,23 @@ const apps = [
     articleUrl: "https://medium.com/@nicholeacosta/from-mental-load-to-agentic-care-building-a-refill-reminder-system-that-actually-works-ce97820f597b",
   },
   {
+    title: "Community Center",
+    subtitle: "Unified Activity Scheduler",
+    problem: "Community center apps are often fragmented — fitness class schedules are easy to find, but everything else requires digging through a separate website. Members miss activities they'd enjoy, staff waste time fielding schedule questions, and prospective members never get a clear picture of everything the center has to offer.",
+    solution: "A unified community center scheduler that brings every activity and schedule into one place, with one-tap calendar add for any session — no app-switching required. An admin dashboard lets staff update schedules in real time with no tech background needed. Fewer missed classes means more engaged members, better retention, and a seamless first impression for anyone considering joining.",
+    tags: ["Community", "Scheduling", "Admin Tools", "Personalization"],
+    icon: <Calendar className="w-5 h-5" />,
+    color: "from-[hsl(200,60%,45%)] to-[hsl(220,55%,40%)]",
+    projectUrl: "",
+    dashboardImage: `${base}wcc-app.jpeg`,
+    hideUserFlowPlaceholders: true,
+  },
+  {
     title: "Story Scout",
     subtitle: "Children's Book Recommendations",
     problem: "My children and I visit the library every week and pick books to read together at night, but choosing at random makes the experience hit-or-miss—some stories are great, others not so much. I wanted a way to get personalized recommendations so my family and others in the community could spend more time reading books we'll enjoy.",
     solution: "An AI-powered recommendation engine that analyzes a family's reading history — likes, dislikes, themes, and authors — to suggest personalized children's books available in the local library catalog.",
-    tags: ["EdTech", "AI", "Family"],
+    tags: ["EdTech", "AI", "Family", "Personalization"],
     icon: <BookOpen className="w-5 h-5" />,
     color: "from-[hsl(35,85%,55%)] to-[hsl(15,75%,50%)]",
     projectUrl: "/projects/e0275e0c-1b0f-4930-a76c-578b58dde4ed",
