@@ -14,7 +14,7 @@ const VideoEmbed = () => {
       {playing ? (
         <iframe
           src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1`}
-          title="Epic 12"
+          title="E.P.I.C 12"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           className="absolute inset-0 w-full h-full"
@@ -28,7 +28,7 @@ const VideoEmbed = () => {
         >
           <img
             src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
-            alt="Epic 12 Collective"
+            alt="E.P.I.C 12 Collective"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
@@ -53,7 +53,7 @@ const Headshot = () => (
 const values = [
   {
     label: "Born from lived experience",
-    description: "I was diagnosed with Type 1 diabetes at 18. For years, glucose management was a relentless cognitive burden — until a CGM, insulin pump, and mobile apps transformed my daily life. That experience became my professional north star.",
+    description: "I was diagnosed with Type 1 diabetes at 18. For years, glucose management was a relentless cognitive burden — until a CGM, insulin pump, and mobile apps transformed my daily life. That experience shapes every product decision I make.",
     link: { label: "Featured in STAT News", href: "https://www.statnews.com/sponsor/2023/06/16/mental-checklists-constant-vigilance-a-day-living-with-type-1-diabetes/" },
   },
   {
@@ -71,7 +71,7 @@ const AboutMe = () => {
         <div className="container relative max-w-4xl text-center space-y-6">
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] text-foreground">
             "I don't build features.{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span>
               I build bridges
             </span>{" "}
             — for the people the existing system forgot to design for."
@@ -99,13 +99,13 @@ const AboutMe = () => {
 
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
-                  I build bridges — between health information and real-world care, between people who wouldn't otherwise be in the same room. Before product management, I founded Epic 12, a collaborative performance collective that brought 12 strangers — musicians, poets, dancers, actors, comedians — together every quarter to create something none of them could make alone. Bridging gaps across race, gender, sexuality, and age through collaborative performance taught me what I carry into every product room: the most powerful outcomes happen when you create the conditions for different people to trust the process and build together. Poetry sharpened the way I listen and communicate. Product gave me the tools to scale what I care about. And a Type 1 diabetes diagnosis at 18 gave me a permanent stake in getting it right.
+                  I build bridges — between health information and real-world care, between people who wouldn't otherwise be in the same room. Before product management, I founded E.P.I.C 12, a collaborative performance collective that brought together 12 new musicians, poets, dancers, actors, and comedians each quarter to perform an original show. That experience sharpened something I use every day: how to frame a problem so the right people can actually solve it together. Poetry sharpened the way I listen and communicate. Product gave me the tools to scale what I care about. A Type 1 diabetes diagnosis at 18 gave me one clear perspective: usability isn't a nice-to-have. It's everything.
                 </p>
                 <p>
-                  At Mayo Clinic, I built a cross-functional product team from the ground up — one that became a model for how agile teams could move fast without losing rigor. During the pandemic, that team helped position Mayo Clinic as a global source of COVID information and innovation. It's the kind of work I'm drawn to: high stakes, cross-functional, no obvious playbook. I stay close to what's emerging in AI, health tech, and medical research — because the best products are continuously discovering how to best serve the people who need them most.
+                  At Mayo Clinic, I built a cross-functional product team from scratch — one that became a model for how fast, rigorous product work could actually happen inside a large health system. My leadership helped position the organization as the global source of COVID information throughout the pandemic and evolve the international patient website experience. It's the kind of work I'm drawn to: high stakes, cross-functional, no obvious playbook. I stay close to what's emerging in AI, health tech, and medical research — because the best products are continuously discovering how to best serve the people who need them most.
                 </p>
                 <p>
-                  Right now I'm most energized by the practical version of the AI question — not what's possible in theory, but what's actually useful in people's hands. How do you build something that reduces the burden of managing a chronic condition without creating new ones? How do you design for patients who are already overwhelmed? How do you earn trust in a space where the stakes are high and the margin for error is narrow? These are the problems I want to be working on. I'm also co-hosting the Claude Code study group with <a href="https://www.womendefiningai.org/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">Women Defining AI</a> — a community of women shaping how AI is built and used — because the best thinking happens in the company of other people asking hard questions.
+                  Right now I'm focused on practical uses of AI — how we can reduce, not add to mental burden, so people can focus on living, not managing. I joined <a href="https://www.womendefiningai.org/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">Women Defining AI</a> in December and found the community I needed to start building real answers. I now co-host the Claude Code study group there. What would you build if you knew how?
                 </p>
               </div>
 

@@ -95,7 +95,7 @@ const CreativeWriting = () => {
         <div className="container relative max-w-4xl text-center space-y-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
             Creative{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span>
               Writing
             </span>
           </h1>
