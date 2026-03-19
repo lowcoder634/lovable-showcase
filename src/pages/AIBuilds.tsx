@@ -16,9 +16,9 @@ const apps = [
     color: "from-[hsl(160,45%,45%)] to-[hsl(180,40%,40%)]",
     projectUrl: "/projects/45626d46-b3a7-4b68-a119-0c5ca5bdccae",
     disclaimer: "This agent is intended for personal use in its current form. For deployment at scale — such as across a care team, clinic, or organization — the agent should be integrated with a secure, HIPAA-compliant communication channel to ensure the privacy and protection of sensitive health information.",
-    dashboardImage: `${base}mevi-dashboard2.png`,
-    userFlowImage1: `${base}symptom-log.png`,
-    userFlowImage2: `${base}ai-visit-prep.png`,
+    dashboardImage: `${base}mevi-dashboard2.webp`,
+    userFlowImage1: `${base}symptom-log.webp`,
+    userFlowImage2: `${base}ai-visit-prep.webp`,
   },
   {
     title: "Clinical Trial Matching Agent",
@@ -32,8 +32,8 @@ const apps = [
     color: "from-[hsl(250,55%,55%)] to-[hsl(280,50%,50%)]",
     projectUrl: "/projects/b2cf96ef-5e59-400a-8431-e7e7ebce13e4",
     sideBySide: [
-      { label: "Backend Workflow", image: `${base}clinical-trial-ai-flow.png` },
-      { label: "Frontend Conversation", video: `${base}trial-match-recording.mov` },
+      { label: "Backend Workflow", image: `${base}clinical-trial-ai-flow.webp` },
+      { label: "Frontend Conversation", video: `${base}trial-match-recording.mp4` },
     ],
   },
   {
@@ -45,9 +45,8 @@ const apps = [
     tags: ["Healthcare", "Automation", "AI Agent"],
     icon: <Bell className="w-5 h-5" />,
     color: "from-[hsl(20,80%,50%)] to-[hsl(40,75%,45%)]",
-    projectUrl: "",
     sideBySide: [
-      { label: "Agent Workflow", image: `${base}medical-refill-reminder-ai-flow.png` },
+      { label: "Agent Workflow", image: `${base}medical-refill-reminder-ai-flow.webp` },
     ],
     articleUrl: "https://medium.com/@nicholeacosta/from-mental-load-to-agentic-care-building-a-refill-reminder-system-that-actually-works-ce97820f597b",
   },
@@ -59,7 +58,6 @@ const apps = [
     tags: ["Community", "Scheduling", "Admin Tools", "Personalization"],
     icon: <Calendar className="w-5 h-5" />,
     color: "from-[hsl(200,60%,45%)] to-[hsl(220,55%,40%)]",
-    projectUrl: "",
     dashboardImage: `${base}wcc-app.jpeg`,
     hideUserFlowPlaceholders: true,
   },
@@ -72,7 +70,7 @@ const apps = [
     icon: <BookOpen className="w-5 h-5" />,
     color: "from-[hsl(35,85%,55%)] to-[hsl(15,75%,50%)]",
     projectUrl: "/projects/e0275e0c-1b0f-4930-a76c-578b58dde4ed",
-    dashboardImage: `${base}story-scout-dash.png`,
+    dashboardImage: `${base}story-scout-dash.webp`,
     hideUserFlowPlaceholders: true,
   },
   {

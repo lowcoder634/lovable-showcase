@@ -53,12 +53,19 @@ const GetInTouch = () => {
               ))}
             </SelectContent>
           </Select>
-          <a href={href} className="shrink-0" aria-label={selected ? `Send email about: ${reason?.label}` : "Email Me — select a reason first"}>
-            <Button className="gap-2 w-full sm:w-auto" size="lg" disabled={!selected} aria-disabled={!selected}>
+          {selected ? (
+            <a href={href} className="shrink-0" aria-label={`Send email about: ${reason?.label}`}>
+              <Button className="gap-2 w-full sm:w-auto" size="lg">
+                <Mail className="w-4 h-4" aria-hidden="true" />
+                Email Me
+              </Button>
+            </a>
+          ) : (
+            <Button className="gap-2 w-full sm:w-auto shrink-0" size="lg" disabled aria-disabled="true">
               <Mail className="w-4 h-4" aria-hidden="true" />
               Email Me
             </Button>
-          </a>
+          )}
         </div>
       </div>
     </section>
