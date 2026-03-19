@@ -209,6 +209,22 @@ const CreativeWriting = () => {
                     </CardContent>
                   </Card>
 
+                  {piece.problem && (
+                    <Card className="border-primary/20 bg-primary/5">
+                      <CardContent className="pt-5 pb-5 space-y-2">
+                        <p className="text-xs font-semibold uppercase tracking-wider text-primary">{piece.problemLabel}</p>
+                        <p className="text-sm leading-relaxed text-foreground/80">{piece.problem}</p>
+                        {piece.launchUrl && (
+                          <a href={piece.launchUrl} target="_blank" rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline pt-1">
+                            <Play className="w-3.5 h-3.5 fill-primary" />
+                            Watch the Virtual Chapbook Launch
+                          </a>
+                        )}
+                      </CardContent>
+                    </Card>
+                  )}
+
                   {piece.blurb && (
                     <blockquote className="border-l-2 border-primary/40 pl-4 space-y-2">
                       <p className="text-sm leading-relaxed text-foreground/70 italic">"{piece.blurb.quote}"</p>
