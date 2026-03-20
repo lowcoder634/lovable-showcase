@@ -66,7 +66,7 @@ const apps = [
     subtitle: "Children's Book Recommendations",
     problem: "My family and I visit the library every week, but choosing random books makes the experience hit-or-miss—some stories are great, others not so much. I wanted a way to get personalized recommendations so my family and others in the community could spend more time reading books we'll enjoy.",
     solution: "An AI-powered recommendation engine that analyzes a family's reading history — likes, dislikes, themes, and authors — to suggest personalized children's books available in the local library catalog.",
-    tags: ["EdTech", "AI", "Family", "Personalization"],
+    tags: ["Community", "AI", "Family", "Personalization"],
     icon: <BookOpen className="w-5 h-5" />,
     color: "from-[hsl(35,85%,55%)] to-[hsl(15,75%,50%)]",
     projectUrl: "/projects/e0275e0c-1b0f-4930-a76c-578b58dde4ed",
