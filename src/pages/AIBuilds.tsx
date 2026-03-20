@@ -9,8 +9,8 @@ const apps = [
   {
     title: "MedPrep",
     subtitle: "Patient Appointment Prep",
-    problem: "Patients forget symptoms, medications, and questions during and between doctor visits. With only 15 minutes per appointment, disorganized information leads to missed diagnoses and outdated action plans.",
-    solution: "An AI-powered app that collects simple patient notes and generates a structured 'Doctor Visit Brief' — covering symptoms, timeline, medications, and questions — ready to hand to the doctor in under 30 seconds.",
+    problem: "Patients forget symptoms and need support knowing what questions to ask during and between medical appointments. Unreported symptoms and unaswered questions leads to missed diagnoses and outdated action plans.",
+    solution: "An AI-powered app that collects simple patient notes and generates a structured 'Doctor Visit Brief' — preparing patients for productive appointments with their doctors.",
     tags: ["Healthcare", "AI", "Patient Experience"],
     icon: <Stethoscope className="w-5 h-5" />,
     color: "from-[hsl(160,45%,45%)] to-[hsl(180,40%,40%)]",
@@ -40,7 +40,7 @@ const apps = [
     title: "Medical Refill Reminder Agent",
     subtitle: "Agent Workflow",
     problem: "My pharmacy portal didn't offer automatic refill reminders. It didn't support auto-shipment. There was no way to schedule or proactively manage anything — and with multiple medications and medical supplies to track, each with different usage rates and reorder timelines, the mental overload was overwhelming. So I built my own system.",
-    solution: "The Medical Refill Reminder Agent tracks your medications and medical supplies and sends a reminder 7–14 days before you're at risk of running out — giving you a comfortable window to refill without any last-minute scrambling. Alerts are delivered to the communication channel of your choice, so reminders reach you where you already are. No spreadsheets, no guesswork, no gaps in care.",
+    solution: "The Medical Refill Reminder Agent tracks your medications and medical supplies and sends a reminder 7–14 days before you're at risk of running out. Alerts are delivered to the communication channel of your choice, so you no longer have to do the manual calculations.",
     disclaimer: "This agent is intended for personal use in its current form. For deployment at scale — such as across a care team, clinic, or organization — the agent should be integrated with a secure, HIPAA-compliant communication channel to ensure the privacy and protection of sensitive health information.",
     tags: ["Healthcare", "Automation", "AI Agent"],
     icon: <Bell className="w-5 h-5" />,
@@ -64,7 +64,7 @@ const apps = [
   {
     title: "Story Scout",
     subtitle: "Children's Book Recommendations",
-    problem: "My children and I visit the library every week and pick books to read together at night, but choosing at random makes the experience hit-or-miss—some stories are great, others not so much. I wanted a way to get personalized recommendations so my family and others in the community could spend more time reading books we'll enjoy.",
+    problem: "My family and I visit the library every week, but choosing random books makes the experience hit-or-miss—some stories are great, others not so much. I wanted a way to get personalized recommendations so my family and others in the community could spend more time reading books we'll enjoy.",
     solution: "An AI-powered recommendation engine that analyzes a family's reading history — likes, dislikes, themes, and authors — to suggest personalized children's books available in the local library catalog.",
     tags: ["EdTech", "AI", "Family", "Personalization"],
     icon: <BookOpen className="w-5 h-5" />,
