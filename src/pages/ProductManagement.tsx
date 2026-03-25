@@ -132,7 +132,7 @@ const projects = [
     solution: "Led a cross-functional product team through a data-driven content strategy with deliberate roadmap pivots. Early pandemic: content driven entirely by user questions. Later stages: shifted to a hope-focused narrative showcasing vaccine importance. Delivered a U.S. COVID transmission map, vaccine comparison chart, and interactive timeline — all iterated through A/B testing and accessibility audits.",
     outcomes: [
       "15.9M views on the U.S. COVID transmission map (2021)",
-      "5.5M views on the COVID tracker tool",
+      "5.5M views on the vaccination tracker map",
       "100% task completion after accessibility fix via collapsible data tables",
     ],
     tags: ["Content Strategy", "A/B Testing", "Accessibility", "Cross-functional Leadership", "Change Management"],
