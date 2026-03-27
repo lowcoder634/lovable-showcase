@@ -45,9 +45,9 @@ const GetInTouch = () => {
             <SelectTrigger id="contact-reason" className="w-full" aria-describedby="get-in-touch-instructions">
               <SelectValue placeholder="What's on your mind?" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="max-w-[calc(100vw-2rem)]">
               {emailReasons.map((r) => (
-                <SelectItem key={r.subject} value={r.subject}>
+                <SelectItem key={r.subject} value={r.subject} className="whitespace-normal h-auto py-2">
                   {r.label}
                 </SelectItem>
               ))}

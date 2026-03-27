@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 import AIBuilds from "./pages/AIBuilds";
 import AboutMe from "./pages/AboutMe";
 import ProductManagement from "./pages/ProductManagement";
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Navigate to="/ai-builds" replace />} />
